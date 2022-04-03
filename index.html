@@ -5,117 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Турагенство</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <!-- Секция Хедер -->
-    <header>
-        <a href="./index.html">
-            <img src="./images/logo.svg" alt="Лого" width="54" height="54">
-            <p>Байкальский отдых Турагентство</p>
-        </a>
-        <ul>
-            <li><a href="tel:+89243541540">8-924-3-541-540</a></li>
-            <li><a href="mailto:baikalholiday@mail.ru">baikalholiday@mail.ru</a></li>
-        </ul>
-        <button type="button">Обратный звонок</button>
-        <nav>
-            <ul>
-                <li><a href="">Бронирование</a></li>
-                <li><a href="">Экскурсии</a></li>
-                <li><a href="">Туры на Байкал</a></li>
-                <li><a href="">О Байкале</a></li>
-                <li><a href="">О нас</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <a class="logo" href="./index.html">
+                    <img src="./images/logo.svg" alt="Лого" width="54" height="54">
+                    <p class="logo-txt">Байкальский отдых <span class="logo-txt-secondary">Турагентство</span></p>
+                </a>
+                <ul class="contacts">
+                    <li class="contacts-item"><a class="contacts-link" href="tel:+89243541540">8-924-3-541-540</a></li>
+                    <li class="contacts-item"><a class="contacts-link" href="mailto:baikalholiday@mail.ru">baikalholiday@mail.ru</a>
+                    </li>
+                </ul>
+                <button class="header-btn" type="button">Обратный звонок</button>
+            </div>
+            <nav class="site-nav">
+                <ul class="site-nav-list">
+                    <li class="site-nav-item"><a class="site-nav-link" href="">Бронирование</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link" href="">Экскурсии</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link" href="">Туры на Байкал</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link" href="">О Байкале</a></li>
+                    <li class="site-nav-item"><a class="site-nav-link" href="">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <!-- Уникальный контент -->
     <main>
         <!-- Секция Герой -->
-        <section>
-            <h1>Путешествия по Байкалу</h1>
-            <p>
-                Туры по самому красивому месту России. Поехали с нами за новыми впечатлениями!
-            </p>
-            <a href="">подобрать тур</a>
-            <a href=""></a>
+
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Путешествия по Байкалу</h1>
+                <p class="hero-txt">
+                    Туры по самому красивому месту России. Поехали с нами за новыми впечатлениями!
+                </p>
+                <a class="hero-btn" href="">подобрать тур</a>
+                <a class="hero-link" href=""></a>
+            </div>
         </section>
+
         <!-- Секция Категории -->
-        <section>
-            <h2>Категории</h2>
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Турбазы-на-Байкале.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Турбазы на Байкале</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Экскурсии-и-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Экскурсии и туры</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Охота-и-рыбалка.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Охота и рыбалка</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Экстрим-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Экстрим туры</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Теплоходы,-яхты.jpg" alt="иллюстрация категорий" width="255" height="150">
-                        <h3>Теплоходы, яхты</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Красоты-Байкала.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Красоты Байкала</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Гостиницы-в-Улан-Удэ.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Гостиницы в Улан-Удэ</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Транспорт.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Транспорт</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Дтуризм.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Деловой туризм</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Круизы-по-Байкалу.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Круизы по Байкалу</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/Зимние-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Зимние туры</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="./images/categories/О-Байкале.jpg" alt="иллюстрация категорий" width="256" height="152">
-                        <h3>Карта Байкала</h3>
-                    </a>
-                </li>
-            </ul>
+        <section class="categories">
+            <h2 class="visually-hidden">Категории</h2>
+            <div class="container">
+                <ul class="categories-list">
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Турбазы-на-Байкале.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Турбазы на Байкале</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Экскурсии-и-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Экскурсии и туры</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Охота-и-рыбалка.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Охота и рыбалка</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Экстрим-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Экстрим туры</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Теплоходы,-яхты.jpg" alt="иллюстрация категорий" width="255" height="150">
+                            <h3 class="categories-text">Теплоходы, яхты</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Красоты-Байкала.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Красоты Байкала</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Гостиницы-в-Улан-Удэ.jpg" alt="иллюстрация категорий" width="256"
+                                height="152">
+                            <h3 class="categories-text">Гостиницы в Улан-Удэ</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Транспорт.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Транспорт</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Дтуризм.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Деловой туризм</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Круизы-по-Байкалу.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Круизы по Байкалу</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/Зимние-туры.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Зимние туры</h3>
+                        </a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="">
+                            <img src="./images/categories/О-Байкале.jpg" alt="иллюстрация категорий" width="256" height="152">
+                            <h3 class="categories-text">Карта Байкала</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Секция Деятельность -->
         <section>
@@ -242,21 +262,25 @@
             </a>
         </section>
         <!-- Секция Фотогалерея -->
-        <section>
-            <h2>Фотогалерея</h2>
-            <a href="">Перейти в раздел</a>
-            <ul>
-                <li><button type="button"></button></li>
-                <li><button type="button"></button></li>
-            </ul>
-            <ul>
-                <li><img src="./images/gallery/shore.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-                <li><img src="./images/gallery/seals.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-                <li><img src="./images/gallery/rock.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-                <li><img src="./images/gallery/monument.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-                <li><img src="./images/gallery/tent.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-                <li><img src="./images/gallery/water.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
-            </ul>
+        <section class="gallery">
+            <div class="container gallery-container">
+                <div class="title-position">
+                    <h2 class="gallery-title">Фотогалерея</h2>
+                    <a class="gallery-link" href="">Перейти в раздел</a>
+                    <ul class="gallery-list-btn">
+                        <li class="gallery-item-btn"><button class="gallery-btn" type="button"></button></li>
+                        <li class="gallery-item-btn"><button class="gallery-btn" type="button"></button></li>
+                    </ul>
+                </div>
+                <ul class="gallery-list-img">
+                    <li class="gallery-item-img"><img src="./images/gallery/shore.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                    <li class="gallery-item-img"><img src="./images/gallery/seals.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                    <li class="gallery-item-img"><img src="./images/gallery/rock.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                    <li class="gallery-item-img"><img src="./images/gallery/monument.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                    <li class="gallery-item-img"><img src="./images/gallery/tent.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                    <li class="gallery-item-img"><img src="./images/gallery/water.jpg" alt="иллюстрация галереи" width="352" height="256"></li>
+                </ul>
+            </div>
         </section>
     </main>
 
