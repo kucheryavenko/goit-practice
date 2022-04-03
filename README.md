@@ -1,1 +1,1 @@
-# goit-practice-1
+# goit-practice
