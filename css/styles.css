@@ -24,6 +24,20 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 1150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid tomato;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -37,26 +51,38 @@ body {
   margin: -1px;
 }
 
+/* Header */
+
 .header {
   position: absolute;
   width: 100%;
   display: flex;
+  z-index: 1;
 }
 
 .header-top {
 display: flex;
 padding-top: 13px;
 padding-bottom: 14px;
-
+margin-bottom: 20px;
+outline: 1px solid blue;
 }
 
 .logo {
 display: flex;
-  text-decoration: none;
+outline: 1px solid tomato;
 }
+
+.logo-icon{
+  outline: 1px solid blueviolet;
+  margin-right: 20px;
+}
+
 .logo-txt {
-width: 210px;
-margin-left: 20px;
+display: block;
+width: 200px;
+outline: 1px solid yellow;
+
 font-family: 'PT Serif';
 font-weight: 700;
 font-size: 20px;
@@ -66,6 +92,7 @@ color: #FFFFFF;
 }
 
 .logo-txt-secondary {
+outline: 1px solid blue;
 
   font-family: 'Roboto';
   font-weight: 400;
@@ -78,11 +105,16 @@ color: #FFFFFF;
 .contacts {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: 45px;
 }
-.contacts-item {}
+.contacts-item:not(:last-child) {
+  margin-right: 33px;
+}
 
 .contacts-link {
-  display: inline-block;
+  display: inline-flex;
+  text-align: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.3;
@@ -90,9 +122,15 @@ color: #FFFFFF;
   color: #FFFFFF;
   text-decoration: none;
 }
+
+.contacts-icon {
+  margin-right: 12px;
+  fill: currentColor;
+}
+
 .header-btn {
-  display: block;
-padding: 15px 6px;
+display: block;
+padding: 13px 25px;
 display: inline-block;
 font-weight: 400;
 font-size: 16px;
@@ -101,18 +139,19 @@ color: #FFFFFF;
 
 background-color: transparent;
 border: 1px solid rgba(255, 255, 255, 0.5);
-box-sizing: border-box;
-border-radius: 22px;
+border-radius: 30px;
 cursor: pointer;
 }
 
 .site-nav {
+  outline: 1px solid green;
 }
 .site-nav-list {
-  margin-top: 20px;
   display: flex;
 }
-.site-nav-item {}
+.site-nav-item:not(:last-child) {
+  margin-right: 32px;
+}
 .site-nav-link {
   display: inline-block;
   font-weight: 400;
@@ -126,6 +165,7 @@ cursor: pointer;
 
 /* Hero */
 .hero {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 
@@ -137,11 +177,22 @@ cursor: pointer;
 }
 
 .hero::before {
+  content: "";
+
+  position: absolute;
+  top: 81px;
+  left: 0;
   
+  display: block;
+  width: 100%;
+
+  background: #C4C4C4;
+  opacity: 0.3;
+  border: 1px solid #D9D9DE;
 }
 
 .hero-title {
-  margin-bottom: 8px;
+margin-bottom: 8px;
 font-family: 'PT Serif';
 font-weight: 700;
 font-size: 90px;
@@ -176,13 +227,14 @@ text-transform: uppercase;
 color: #FFFFFF;
 
 border: 1px solid #FFFFFF;
-box-sizing: border-box;
 border-radius: 30px;
 text-decoration: none;
 }
 
 .hero-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 
@@ -194,21 +246,14 @@ text-decoration: none;
   border-radius: 50%;
 }
 
+.hero-icon {
+  fill: currentColor;
+}
 /* Categories */
 
 .categories {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-
-.container {
-  width: 1150px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-
-  outline: 1px solid tomato;
 }
 
 .categories-text {
@@ -221,31 +266,41 @@ text-decoration: none;
 }
 
 .categories-list {
-  display: flex;
+
+  /* display: flex;
   flex-wrap: wrap;
   margin-right: -32px;
-  margin-bottom: -32px;
+  margin-bottom: -32px; */
+
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+
 }
 
 .categories-item {
-  width: calc((100% - 128px) / 4);
+  /* width: calc((100% - 128px) / 4);
   margin-right: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 32px; */
+
   border: 1px solid #d9d9de;
   border-radius: 6px;
   overflow: hidden;
-  /* outline: 1px solid tomato; */
 }
 
 /* Gellary */
 
+.gallery {
+background-color: rgba(63, 169, 245, 0.07);
+}
+
 .gallery-container {
   padding-top: 44px;
   padding-bottom: 80px;
+}
 
-  background-color:
-
-  outline: 1px solid tomato;
+.title-position {
+  margin-bottom: 52px;
 }
 
 .gallary-title {
@@ -276,29 +331,135 @@ text-decoration: none;
   align-items: center;
 }
 
-.gallery-btn {
-  width: 44px;
-  height: 44px;
-
-  border: 1px solid #0061d9;
-  box-sizing: border-box;
-  border-radius: 22px;
-}
-
 .gallery-item-btn {
   margin-right: 16px;
 }
 
-.gallery-list-img {
+.gallery-btn {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: transparent;
+  border: 1px solid #0061d9;
+  box-sizing: border-box;
+  border-radius: 22px;
+
+  cursor: pointer;
+}
+
+
+.gallery-list-img {
+  /* display: flex;
   flex-wrap: wrap;
 
   margin-right: -32px;
-  margin-bottom: -32px;
+  margin-bottom: -32px; */
+
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.gallery-item-img {
+/* .gallery-item-img {
   width: calc((100% - 96px) / 3);
   margin-right: 32px;
   margin-bottom: 32px;
+} */
+
+/* Offers */
+
+.offers {
+padding-top: 76px;
+padding-bottom: 80px;
+}
+
+.offers-container {
+  position: relative;
+}
+
+.offers-list {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.offers-item {
+  position: relative;
+}
+
+.offers-item:nth-child(3) {
+grid-column-start: 3;
+grid-column-end: 5;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+
+.offers-title {
+  margin-bottom: 40px;
+
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3;
+  
+  color: #000000;
+}
+
+.offers-subtitle {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  width: 218px;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.3;
+
+  color: #FFFFFF;
+}
+
+.offers-subtitle-width {
+  width: 407px;
+}
+
+.offers-txt {
+  position: absolute;
+  bottom: 19px;
+  left: 17px;
+  width: 218px;
+
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+
+  color: #FFFFFF;
+}
+
+.last-link {
+  position: absolute;
+  bottom: 0;
+  right: 17px;
+}
+
+.last-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 210px;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: center;
+  
+  color: #FFFFFF;
+
+  transform: translate(-50%, -50%);
 }
